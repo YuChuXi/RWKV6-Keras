@@ -1,4 +1,6 @@
 import os
+import sys
+sys.path.append('bert4keras3')
 os.environ['KERAS_BACKEND'] = 'jax'
 os.environ['OPS_KERNEL'] = '1'#1是否使用纯py的wkv算子，0就使用cuda算子
 import keras

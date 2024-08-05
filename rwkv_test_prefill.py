@@ -1,4 +1,6 @@
 import os
+import sys
+sys.path.append('bert4keras3')
 os.environ['KERAS_BACKEND'] = 'torch'
 os.environ['OPS_KERNEL'] = '0'#1使用纯py的wkv算子，0就使用cuda算子
 import keras
